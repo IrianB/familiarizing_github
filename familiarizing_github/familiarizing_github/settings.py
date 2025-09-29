@@ -55,7 +55,7 @@ ROOT_URLCONF = 'familiarizing_github.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],   # ✅ add this line
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
